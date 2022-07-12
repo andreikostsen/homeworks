@@ -14,7 +14,10 @@ function HW3() {
     const [users, setUsers] = useState<Array<UserType>>([ ]) // need to fix any
 
     const addUserCallback = (name: string) => { // need to fix any
-        setUsers([{_id: v1(), name: name}]) // need to fix
+        setUsers([...users, {_id: v1(), name: name}]) // need to fix
+        console.log("this is users length:" + users.length)
+        console.log("name: " + name)
+        console.log(users)
     }
 
     return (
