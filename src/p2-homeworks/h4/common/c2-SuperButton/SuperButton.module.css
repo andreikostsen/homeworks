@@ -1,0 +1,26 @@
+.default {
+    /*background: #99c793;*/
+    /*border: none;*/
+    /*border-radius: 50px;*/
+    /*color: #fff;*/
+    /*cursor: pointer;*/
+    /*display: inline-block;*/
+    /*font-family: 'Rubik', sans-serif;*/
+    /*font-size: inherit;*/
+    /*font-weight: 500;*/
+    /*margin-bottom: 1rem;*/
+    /*outline: none;*/
+    /*padding: 1rem 50px;*/
+    /*position: relative;*/
+    /*transition: all 0.3s;*/
+    /*vertical-align: middle;*/
+}
+
+.default:hover {
+    /*background-color: #3ec635;*/
+
+}
+
+.red {
+    background: red;
+}
