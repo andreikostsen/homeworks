@@ -1,16 +1,17 @@
 .blue_link {
 
-    color: blue;
+    color: white;
+    background-color: blue;
 
 }
 .yellow_link {
 
-    color: blue;
-
+    color: white;
+    background-color: yellow;
 }
 
 .li_nav {
 
     display: inline;
-
+margin: 10px 10px;
 }

@@ -23,8 +23,10 @@ function Header() {
                     </NavLink>
                 </li>
                 <li className={s.li_nav}>
-                    <NavLink to="/junior-plus"  className={{isActive}?{s.blue_link}:{s.yellow_link}}>
-                                                JunPlus
+                    <NavLink to="/junior-plus" className={({isActive}) =>
+                        isActive ? s.blue_link : s.yellow_link
+                    }>
+                        JunPlus
                     </NavLink>
                 </li>
             </ul>
