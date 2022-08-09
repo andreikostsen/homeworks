@@ -1,23 +1,30 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import s from './Header.module.css'
 
 function Header() {
     return (
         <div>
-            <ul>
-                <li>
-                    <NavLink to="/pre-junior">
+            <ul >
+                <li className={s.li_nav}>
+                    <NavLink to="/pre-junior"  style={({ isActive }) => {
+                        return {
+
+                            margin: "1rem 0",
+                            color: isActive ? "red" : "",
+                        };
+                    }}>
                         PreJunior
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink to="/junior">
+                <li className={s.li_nav}>
+                    <NavLink to="/junior" className={s.blue_link}>
                         Junior
                     </NavLink>
                 </li>
-                <li>
-                    <NavLink to="/junior-plus">
-                        JunPlus
+                <li className={s.li_nav}>
+                    <NavLink to="/junior-plus"  className={{isActive}?{s.blue_link}:{s.yellow_link}}>
+                                                JunPlus
                     </NavLink>
                 </li>
             </ul>
