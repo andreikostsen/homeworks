@@ -1,3 +1,23 @@
+.menu {
+
+    display: block;
+
+}
+
+.menuShow {
+
+    display: block;
+
+}
+
+.menuHide {
+
+    display: none;
+
+}
+
+
+
 .blue_link {
 
     color: white;
