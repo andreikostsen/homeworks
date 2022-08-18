@@ -21,7 +21,7 @@ export const MenuButton=(props:PropsType)=> {
 
     return (
 
-        <div onClick={onclickHandler}>
+        <div onClick={onclickHandler}  className={s.menuIconBox}>
 
             <div className={s.menuIcon}></div>
             <div className={s.menuIcon}></div>

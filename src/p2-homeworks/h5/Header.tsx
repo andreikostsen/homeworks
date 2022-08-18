@@ -8,7 +8,7 @@ function Header() {
     const [visibility, setVisibility] = useState(false)
 
 
-    let addClass = s.menuShow
+    let addClass
 
     addClass = visibility ? s.menuHide : s.menuShow
     console.log(addClass)
@@ -26,7 +26,7 @@ function Header() {
             <div>
                 <MenuButton onclickHandler={showHide}/>
 
-                <div className={addClass}>
+                <div className={s.menu + " " + addClass}>
 
                     <ul>
                         <li className={s.li_nav}>
@@ -55,7 +55,6 @@ function Header() {
                     </ul>
 
 
-                    // add NavLinks
 
                 </div>
             </div>
