@@ -1,7 +1,34 @@
-.someClass {
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
 
 }
 
-.error {
+
+.normalInput {
+    background-color: black;
+    margin: 10px 5px;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.errorInput {
     border: 1px solid red;
+    margin: 10px 5px;
+    border-radius: 5px;
+}
+
+.wrapper span {
+    display: flex;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.errorTxt {
+    font-size: 80%;
+    font-weight: bold;
+    color: red;
 }

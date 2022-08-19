@@ -1,5 +1,6 @@
 import React, {ChangeEvent} from 'react'
 import s from './Greeting.module.css'
+import f from "../h2/Affair.module.css"
 
 type GreetingPropsType = {
     name: string // need to fix any
@@ -13,14 +14,20 @@ type GreetingPropsType = {
 const Greeting: React.FC<GreetingPropsType> = (
     {name, setNameCallback, addUser, error, totalUsers} // деструктуризация пропсов
 ) => {
-    const inputClass = s.error // need to fix with (?:)
+    const inputClass = error? s.errorInput:s.normalInput  // need to fix with (?:)
+
+
 
     return (
         <div>
-            <input value={name} onChange={setNameCallback} className={inputClass}/>
-            <span>{error}</span>
-            <button onClick={addUser}>add</button>
-            <span>{totalUsers}</span>
+            <div className={s.wrapper}>
+                <input value={name} onChange={setNameCallback} className={inputClass}/>
+                <button onClick={addUser} className={f.btn}>add</button>
+                <span>{totalUsers}</span>
+
+            </div>
+            <span className={s.errorTxt}>{error}</span>
+
         </div>
     )
 }

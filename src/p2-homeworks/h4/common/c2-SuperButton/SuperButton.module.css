@@ -1,4 +1,17 @@
 .default {
+
+
+    background-color: black;
+    color: yellowgreen;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 5px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    border: 0px;
+
+
+
     /*background: #99c793;*/
     /*border: none;*/
     /*border-radius: 50px;*/
@@ -19,8 +32,28 @@
 .default:hover {
     /*background-color: #3ec635;*/
 
+    color: black;
+    cursor: pointer;
+    background-color: yellowgreen;
+
 }
 
 .red {
-    background: red;
+    background-color: red;
+    color: yellowgreen;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 5px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    border: 0px;
+    cursor: pointer;
 }
+
+.red:hover {
+
+    background-color: #8d1c1c;
+    color: white;
+
+}
+

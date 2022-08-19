@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 import Affairs from './Affairs'
 import AlternativeAffairs from "./AlternativeAffairs";
+import s from "./Affair.module.css"
 
 // types
 export type AffairPriorityType = 'high' | 'low' | 'middle' // need to fix any
@@ -42,11 +43,12 @@ function HW2() {
     } // need to fix any
 
 
-
     return (
         <div>
             <hr/>
-            homeworks 2
+            <div className={s.hw_header}>homeworks 2</div>
+
+
 
             {/*should work (должно работать)*/}
             <Affairs
@@ -59,7 +61,7 @@ function HW2() {
             {/*для личного творчества, могу проверить*/}
             <AlternativeAffairs
 
-            data={defaultAffairs}
+                data={defaultAffairs}
 
             />
             <hr/>

@@ -3,7 +3,7 @@
     position: absolute;
     left: 20px;
     top: 55px;
-    z-index: -1;
+    z-index: 0;
 
     display: flex;
     flex-direction: row;
@@ -17,43 +17,33 @@
     transition: transform .3s
     cubic-bezier(0, .52, 0, 1);
 
-
-
-
 }
 
+
 .menuShow {
-
-
-
-
     transform: translate3d(0, 0, 0);
-
-
 }
 
 .menuHide {
-
     transform: translate3d(-600px, 0, 0);
-
-}
-
-
-
-.blue_link {
-
-    color: white;
-    background-color: blue;
-
-}
-.yellow_link {
-
-    color: white;
-    background-color: yellow;
 }
 
 .li_nav {
-
     display: inline;
-margin: 10px 10px;
+    margin: 10px 10px;
+
 }
+
+.link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.active_link {
+    color: yellowgreen;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+

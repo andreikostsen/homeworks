@@ -1,40 +1,44 @@
+/*.superInput {*/
+/*    background: #f15d22;*/
+/*    border: none;*/
+/*    border-radius: 5px;*/
+/*    color: #fff;*/
+/*    cursor: pointer;*/
+/*    display: inline-block;*/
+/*    font-family: 'Rubik', sans-serif;*/
+/*    font-size: inherit;*/
+/*    font-weight: 500;*/
+/*    margin-bottom: 1rem;*/
+/*    outline: none;*/
+/*    padding: 1rem 50px;*/
+/*    position: relative;*/
+/*    transition: all 0.3s;*/
+/*    vertical-align: middle;*/
+/*}*/
+
+
 .superInput {
-    background: #f15d22;
-    border: none;
+    background-color: black;
+    margin: 10px 5px;
+    border: 0px;
     border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
+    color: white;
     display: inline-block;
-    font-family: 'Rubik', sans-serif;
-    font-size: inherit;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    outline: none;
     padding: 1rem 50px;
-    position: relative;
-    transition: all 0.3s;
-    vertical-align: middle;
+
+
 }
 
 
 .errorInput {
-    background: #f15d22;
-    border: 3px solid red;
-    border-radius: 5px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'Rubik', sans-serif;
-    font-size: inherit;
-    font-weight: 500;
-    margin-bottom: 1rem;
-    outline: none;
+    border: 1px solid red;
     padding: 1rem 50px;
-    position: relative;
-    transition: all 0.3s;
-    vertical-align: middle;
+    border-radius: 5px;
+
 }
 
 .error {
     color: red;
+    margin: 10px;
+
 }

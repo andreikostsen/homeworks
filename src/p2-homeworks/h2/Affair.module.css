@@ -1,0 +1,47 @@
+.hw_header {
+
+    margin: 20px 0px;
+    font-weight: bold;
+
+}
+
+
+.affairsContainer {
+
+    margin: 20px 0px;
+
+}
+
+
+
+.wrapper {
+
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-between;
+
+
+}
+
+
+
+.btn {
+
+    background-color: black;
+    color: yellowgreen;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 10px 5px;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    border: 0px;
+
+}
+
+.btn:hover {
+
+    color: black;
+    cursor: pointer;
+    background-color: yellowgreen;
+}

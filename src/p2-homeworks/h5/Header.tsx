@@ -21,6 +21,14 @@ function Header() {
     }
 
 
+    const linkClass = (isActive: boolean) => {
+
+        return isActive ? s.active_link : s.link
+
+
+    }
+
+
         return (
 
             <div>
@@ -30,25 +38,17 @@ function Header() {
 
                     <ul>
                         <li className={s.li_nav}>
-                            <NavLink to="/pre-junior" style={({isActive}) => {
-                                return {
-
-                                    margin: "1rem 0",
-                                    color: isActive ? "red" : "",
-                                };
-                            }}>
+                            <NavLink to="/pre-junior" className={({isActive})=>linkClass(isActive)}>
                                 PreJunior
                             </NavLink>
                         </li>
                         <li className={s.li_nav}>
-                            <NavLink to="/junior" className={s.blue_link}>
+                            <NavLink to="/junior" className={({isActive}) => linkClass(isActive)}>
                                 Junior
                             </NavLink>
                         </li>
                         <li className={s.li_nav}>
-                            <NavLink to="/junior-plus" className={({isActive}) =>
-                                isActive ? s.blue_link : s.yellow_link
-                            }>
+                            <NavLink to="/junior-plus" className={({isActive}) => linkClass(isActive)}>
                                 JunPlus
                             </NavLink>
                         </li>
